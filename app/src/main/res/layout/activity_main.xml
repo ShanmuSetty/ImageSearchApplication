@@ -4,27 +4,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/custom_background"
     android:padding="16dp">
 
     <!-- Search Bar -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white"
         android:orientation="horizontal">
 
         <EditText
             android:id="@+id/search_input"
             android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:background="@drawable/custom_search"
+            android:fontFamily="@font/abril_fatface"
             android:hint="Search for images"
-            android:inputType="text" />
+            android:inputType="text"
+            android:paddingStart="40dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
         <Button
             android:id="@+id/search_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Search" />
+            android:background="@drawable/custom_button"
+            android:fontFamily="@font/abril_fatface"
+            android:text="Search"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
     </LinearLayout>
 
     <!-- RecyclerView to Display Images -->
@@ -41,5 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Load More"
+        android:fontFamily="@font/abril_fatface"
+        android:background="@drawable/custom_button"
         android:visibility="gone" />
 </LinearLayout>
